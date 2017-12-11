@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/blur_background"
     tools:context="com.shouryaaggarwal.hp.counter.MainActivity">
 
     <TextView
@@ -11,15 +12,16 @@
         android:layout_width="388dp"
         android:layout_height="wrap_content"
         android:text="@string/zero"
+        android:textAlignment="center"
         android:textSize="300sp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        android:textAlignment="center"/>
+        app:layout_constraintVertical_bias="0.0" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -28,15 +30,19 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.962">
+        app:layout_constraintVertical_bias="0.882">
 
         <Button
+
             android:id="@+id/decButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
+            android:layout_margin="10dp"
+            android:background="@drawable/button_selector2"
             android:onClick="decreaseCount"
             android:text="@string/dec"
             android:textSize="40sp" />
@@ -45,6 +51,9 @@
             android:id="@+id/resetButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
+            android:layout_margin="10dp"
+            android:background="@drawable/button_selector1"
             android:onClick="resetCount"
             android:text="@string/reset"
             android:textSize="40sp" />
@@ -53,6 +62,9 @@
             android:id="@+id/incButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
+            android:layout_margin="10dp"
+            android:background="@drawable/button_selector2"
             android:onClick="incCount"
             android:text="@string/inc"
             android:textSize="40sp" />

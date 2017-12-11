@@ -1,5 +1,6 @@
 package com.shouryaaggarwal.hp.counter;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         decbutton = findViewById(R.id.decButton);
         resetbutton = findViewById(R.id.resetButton);
         incbutton = findViewById(R.id.incButton);
-        countdisplay = findViewById(R.id.currentcount);
+        countdisplay = findViewById(R.id.current_count);
     }
 
     public void displayCount(int cnt)
