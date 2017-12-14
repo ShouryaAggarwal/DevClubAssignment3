@@ -22,6 +22,19 @@ public class MainActivity extends AppCompatActivity {
         resetbutton = findViewById(R.id.resetButton);
         incbutton = findViewById(R.id.incButton);
         countdisplay = findViewById(R.id.current_count);
+
+        if(savedInstanceState != null)
+        {
+            cntr = savedInstanceState.getInt("intKey");
+            displayCount(cntr);
+        }
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState)
+    {
+        savedInstanceState.putInt("intKey",cntr);
+        super.onSaveInstanceState(savedInstanceState);
     }
 
     public void displayCount(int cnt)
